@@ -250,9 +250,6 @@ public class Search extends ActionSupport{
 		db1.close();
 		return SUCCESS;
 	}
-	
-	//second commit
-	//by egit
-	//lab3 3rd
+
 
 }
