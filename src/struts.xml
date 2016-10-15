@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.5//EN"
+        "http://struts.apache.org/dtds/struts-2.5.dtd">
+
+
+<struts>
+<package name="default" extends = "struts-default">
+
+<action name = "enter" class = "h.Search">
+<result>index.jsp</result>
+</action>
+
+<action name = "Search" class = "h.Search"  method = "SearchA">
+<result>qresult.jsp</result>
+</action>
+
+<action name = "QISBN" class = "h.Search" method = "SISBN">
+<result>information.jsp</result>
+</action>
+
+<action name = "Del" class = "h.Search" method = "Delis">
+<result>index.jsp</result>
+</action>
+
+<action name = "ADD" class = "h.Search" method = "ADDin">
+<result name = "input">insert.jsp</result>
+<result>index.jsp</result>
+</action>
+
+<action name = "ADD_A" class = "h.Search"  method = "ADDAu">
+<result>index.jsp</result>
+</action>
+
+
+<action name = "FindBook" class = "h.Search" method = "FindBook">
+<result>update.jsp</result>
+</action>
+
+<action name = "UpBook" class = "h.Search"  method = "UpBook">
+<result name = "input">insert.jsp</result>
+<result>index.jsp</result>
+</action>
+
+
+
+</package>
+
+    
+</struts>
